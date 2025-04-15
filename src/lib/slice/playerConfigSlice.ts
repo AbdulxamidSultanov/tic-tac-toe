@@ -37,7 +37,7 @@ const PlayerConfigSlice = createSlice({
       );
       state.clickedElements = [];
       state.currentPlayer = "X";
-      state.winnerName = null
+      state.winnerName = null;
     },
     setElemenet: (
       state,
