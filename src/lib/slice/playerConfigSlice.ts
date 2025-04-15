@@ -30,11 +30,7 @@ const PlayerConfigSlice = createSlice({
       state.currentPlayer = state.currentPlayer === "X" ? "O" : "X";
     },
     clearElements: (state) => {
-      state.tictactoeElements = state.tictactoeElements.map(
-        (element: string) => {
-          return (element = "");
-        }
-      );
+      state.tictactoeElements = state.tictactoeElements.map(() => "");
       state.clickedElements = [];
       state.currentPlayer = "X";
       state.winnerName = null;
